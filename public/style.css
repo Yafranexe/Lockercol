@@ -7255,11 +7255,16 @@ body:not(.device-touch):not(.device-xs):not(.device-xxs) .product-overlay a {
   margin: 0 auto;
 }
 
-.single-product .product-image,
 .single-product .product-image img {
+  width: 100%;
   height: auto;
+  object-fit: contain;
+  aspect-ratio: 1 / 1; 
+  object-position: center;
+  display: block;
 }
 
+      
 .single-product .product-desc {
   padding: 0;
 }

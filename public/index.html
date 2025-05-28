@@ -190,36 +190,37 @@
         </div>
 
         <script>
-jQuery(document).ready(function ($) {
-  var swiperSlider = new Swiper(".swiper-parent", {
-    slidesPerView: 1,
-    loop: true,
-    grabCursor: true,
-    on: {
-      init: function () {
-        // Mostrar el número de slide inicial
-        $("#slide-number-current").html(this.realIndex + 1);
-        $("#slide-number-total").html(this.slides.length - this.loopedSlides * 0);
-      },
-      slideChange: function () {
-        // Actualizar contador al cambiar el slide
-        $("#slide-number-current").html(this.realIndex + 1);
-      }
-    }
-  });
+          jQuery(document).ready(function ($) {
+            var swiperSlider = new Swiper(".swiper-parent", {
+              slidesPerView: 1,
+              loop: true,
+              grabCursor: true,
+              on: {
+                init: function () {
+                  // Mostrar el número de slide inicial
+                  $("#slide-number-current").html(this.realIndex + 1);
+                  $("#slide-number-total").html(
+                    this.slides.length - this.loopedSlides * 0
+                  );
+                },
+                slideChange: function () {
+                  // Actualizar contador al cambiar el slide
+                  $("#slide-number-current").html(this.realIndex + 1);
+                },
+              },
+            });
 
-  // Botones de navegación personalizados
-  $("#slider-arrow-left").on("click", function (e) {
-    e.preventDefault();
-    swiperSlider.slidePrev();
-  });
+            // Botones de navegación personalizados
+            $("#slider-arrow-left").on("click", function (e) {
+              e.preventDefault();
+              swiperSlider.slidePrev();
+            });
 
-  $("#slider-arrow-right").on("click", function (e) {
-    e.preventDefault();
-    swiperSlider.slideNext();
-  });
-});
-
+            $("#slider-arrow-right").on("click", function (e) {
+              e.preventDefault();
+              swiperSlider.slideNext();
+            });
+          });
         </script>
       </section>
 
@@ -303,9 +304,10 @@ jQuery(document).ready(function ($) {
               </div>
 
               <p>
-                El bloqueador de contraseñas autoconfigurable almacena paquetes
-                y abre casilleros a través de contraseñas preestablecidas por
-                los usuarios, se puede utilizar con sistemas de pago y recaudo.
+                El sistema realiza la apertura de lockers para guardar/retirar
+                paquetes a través de contraseñas preestablecidas por los
+                usuarios, se puede utilizar con sistemas de pago y recaudo con
+                de monedero electrónico.
               </p>
 
               <div class="col_half nobottommargin">
@@ -313,11 +315,11 @@ jQuery(document).ready(function ($) {
                   <li>
                     <i class="icon-caret-right"></i> Contraseña de 6 dígitos
                   </li>
-                  <li><i class="icon-caret-right"></i> Seguridad</li>
+                  <li><i class="icon-caret-right"></i>Opción de abrir y seguir usando</li>
                   <li>
                     <i class="icon-caret-right"></i> función de aviso de voz
                   </li>
-                  <li><i class="icon-caret-right"></i> Teclado de metal.</li>
+                  <li><i class="icon-caret-right"></i> Teclado de metal</li>
                 </ul>
               </div>
             </div>
@@ -668,10 +670,7 @@ jQuery(document).ready(function ($) {
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="proyecto-slide">
-                  <img
-                    src="images/proyectos/Eden_Pin.jpg"
-                    alt="Proyecto 1"
-                  />
+                  <img src="images/proyectos/Eden_Pin.jpg" alt="Proyecto 1" />
                 </div>
               </div>
               <div class="swiper-slide">
@@ -692,10 +691,7 @@ jQuery(document).ready(function ($) {
               </div>
               <div class="swiper-slide">
                 <div class="proyecto-slide">
-                  <img
-                    src="images/proyectos/Petetes1.jpeg"
-                    alt="Proyecto 4"
-                  />
+                  <img src="images/proyectos/Petetes1.jpeg" alt="Proyecto 4" />
                 </div>
               </div>
               <div class="swiper-slide">
@@ -724,8 +720,10 @@ jQuery(document).ready(function ($) {
               </div>
               <div class="swiper-slide">
                 <div class="proyecto-slide">
-                  <img src="images/proyectos/Arrayanes_Mecanica.jpg" 
-                  alt="Proyecto 8" />
+                  <img
+                    src="images/proyectos/Arrayanes_Mecanica.jpg"
+                    alt="Proyecto 8"
+                  />
                 </div>
               </div>
               <div class="swiper-slide">
@@ -788,7 +786,7 @@ jQuery(document).ready(function ($) {
                 </div>
               </div>
             </div>
-          <!-- Formulario de Contacto
+            <!-- Formulario de Contacto
 				============================================= -->
             <div class="col_two_third col_last" id="contactos">
               <div class="widget subscribe-widget clearfix">
@@ -814,7 +812,9 @@ jQuery(document).ready(function ($) {
                       class="form-control required"
                       placeholder="Nombre"
                     />
-                    <span class="input-group-addon"><i class="icon-user"></i></span>
+                    <span class="input-group-addon"
+                      ><i class="icon-user"></i
+                    ></span>
                     <input
                       type="text"
                       name="apellidos"
@@ -863,7 +863,7 @@ jQuery(document).ready(function ($) {
                     </span>
                   </div>
                 </form>
-          <!-- Formulario de Contacto End
+                <!-- Formulario de Contacto End
 				============================================= -->
 
                 <script type="text/javascript">
